@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using AudioScripts;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
+using AudioType = AudioScripts.AudioType;
 
 public class Ball : MonoBehaviour {
 
@@ -14,6 +16,7 @@ public class Ball : MonoBehaviour {
 	[SerializeField] PlayerPaddle _playerPaddle;
 	[SerializeField] Material _trailMaterial;
 	[SerializeField] Material _trailBoostMaterial;
+	[SerializeField] private AudioController _audioController;
 
 	private Rigidbody _rigidbody;
 	private TrailRenderer _trail;
@@ -44,6 +47,7 @@ public class Ball : MonoBehaviour {
 		}
 
 		if (collision.gameObject.TryGetComponent(out Block block)) {
+			_audioController.Instance.PlayAudio(AudioType.SFX_HIT_BOX);
 			block.OnHitBlock();
 		}
 
@@ -58,14 +62,14 @@ public class Ball : MonoBehaviour {
 
 
 	public void Bounce() {
-
+		_audioController.Instance.PlayAudio(AudioType.SFX_HIT_PADDLE);
 		_rigidbody.velocity = new Vector3(_rigidbody.velocity.x, _bounciness, _rigidbody.velocity.z);
 		
 		_trail.time = 0.15f;
 	}
 
 	public void BoostedBounce() {
-		
+		_audioController.Instance.PlayAudio(AudioType.SFX_HIT_PADDLE);
 		_rigidbody.velocity = new Vector3(_rigidbody.velocity.x, _boostedBounciness, _rigidbody.velocity.z);
 		transform.localScale *= 0.9f;
 		Invoke(nameof(ResetSize), 0.05f);
@@ -83,7 +87,7 @@ public class Ball : MonoBehaviour {
 	}
 
 	public void PickUpItem() {
-
+		_audioController.Instance.PlayAudio(AudioType.SFX_COLLECT_EGG);
 	}
 
 	public void BallFall() {
