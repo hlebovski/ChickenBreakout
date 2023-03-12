@@ -16,11 +16,11 @@ public class Ball : MonoBehaviour {
 	[SerializeField] PlayerPaddle _playerPaddle;
 	[SerializeField] Material _trailMaterial;
 	[SerializeField] Material _trailBoostMaterial;
-	[SerializeField] private AudioController _audioController;
+	[SerializeField] AudioController _audioController;
 
 	private Rigidbody _rigidbody;
 	private TrailRenderer _trail;
-	private float _timer = 0.5f;
+	private float _timer = 0f;
 
 	private void Awake() {
 		_rigidbody = GetComponent<Rigidbody>();
@@ -36,8 +36,14 @@ public class Ball : MonoBehaviour {
 
 	}
 
-	private void OnTriggerEnter(Collider other) {
+	private void OnCollisionStay(Collision collision) {
 		
+		_timer += Time.deltaTime;
+		if (_timer > 0.33f && collision.gameObject.TryGetComponent(out Block block)) {
+			_timer = 0;
+			block.OnHitBlock();
+		}
+
 	}
 
 	private void OnCollisionEnter(Collision collision) {
@@ -52,6 +58,8 @@ public class Ball : MonoBehaviour {
 		}
 
 		if (collision.gameObject.TryGetComponent(out Bomb bomb)) {
+			_audioController.Instance.PlayAudio(AudioType.SFX_HIT_BOMB);
+
 			Explode(1, transform.position - bomb.gameObject.transform.position);
 			bomb.OnHitBlock();
 		}
@@ -69,7 +77,7 @@ public class Ball : MonoBehaviour {
 	}
 
 	public void BoostedBounce() {
-		_audioController.Instance.PlayAudio(AudioType.SFX_HIT_PADDLE);
+		_audioController.Instance.PlayAudio(AudioType.SFX_HIT_BOOST);
 		_rigidbody.velocity = new Vector3(_rigidbody.velocity.x, _boostedBounciness, _rigidbody.velocity.z);
 		transform.localScale *= 0.9f;
 		Invoke(nameof(ResetSize), 0.05f);
