@@ -12,4 +12,10 @@ public class DeadZone : MonoBehaviour {
 		}
 	}
 
+	private void OnTriggerStay(Collider other) {
+		if (other.gameObject.TryGetComponent(out EndZone endzone)) {
+			_camera.CameraMoveSpeed = 0.001f;
+		}
+	}
+
 }

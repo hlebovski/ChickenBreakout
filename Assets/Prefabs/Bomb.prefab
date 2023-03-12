@@ -5929,7 +5929,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8644890128313741259}
   - component: {fileID: 8644890128313741256}
-  - component: {fileID: 4261068326878005885}
   - component: {fileID: 9035344169949409193}
   m_Layer: 0
   m_Name: Bomb
@@ -5969,23 +5968,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!114 &4261068326878005885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8644890128313741271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fff90447ff2640c79f395399bc004ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectsToToggle:
-  - {fileID: 8644890128623096906}
-  - {fileID: 8644890127015964451}
-  ignoreCollisionTime: 0
-  Material: {fileID: 13400000, guid: 742c5e678f1cacc479ba5405e9eb52d8, type: 2}
 --- !u!114 &9035344169949409193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5998,6 +5980,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f7d93be446e294f9632bd7bba2783f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectsToToggle:
+  - {fileID: 8644890128623096906}
+  - {fileID: 8644890127015964451}
+  ignoreCollisionTime: 0
+  Material: {fileID: 13400000, guid: 742c5e678f1cacc479ba5405e9eb52d8, type: 2}
 --- !u!1 &8644890128449462648
 GameObject:
   m_ObjectHideFlags: 0

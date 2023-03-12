@@ -63,6 +63,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rotatingPeriod: 100
   _mesh: {fileID: 6769190488619466652}
+  _scoresText: {fileID: 5792285004804779340, guid: 862a1b87d655d5748b5d159bf8ac8e10,
+    type: 3}
 --- !u!114 &7268475965398440515
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using AudioScripts;
+using ObjectScripts;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -18,6 +19,7 @@ public class Ball : MonoBehaviour {
 	[SerializeField] Material _trailBoostMaterial;
 	[SerializeField] AudioController _audioController;
 	[SerializeField] private ScoreService _scoreService;
+	[SerializeField] ScoreTextTransform _scoresText;
 
 	private Rigidbody _rigidbody;
 	private TrailRenderer _trail;
@@ -62,7 +64,7 @@ public class Ball : MonoBehaviour {
 			_audioController.Instance.PlayAudio(AudioType.SFX_HIT_BOMB);
 
 			Explode(1, transform.position - bomb.gameObject.transform.position);
-			//bomb.OnHitBlock();
+			bomb.OnHitBomb();
 		}
 
 		if (collision.gameObject.TryGetComponent<ObjectScripts.BoxesBehavior>(out var boxesBehavior))
@@ -74,7 +76,10 @@ public class Ball : MonoBehaviour {
 		if (collision.gameObject.TryGetComponent<ObjectWithScore>(out var objectWithScore))
 		{
 			var score = objectWithScore.GetScoreCount();
-			_scoreService.AddScore(score);	
+			_scoreService.AddScore(score);
+			ScoreTextTransform scorescore;
+			scorescore = Instantiate(_scoresText, objectWithScore.transform);
+			scorescore.SetText(score);
 		}
 	}
 
@@ -109,6 +114,7 @@ public class Ball : MonoBehaviour {
 	public void PickUpItem(int score) {
 		_audioController.Instance.PlayAudio(AudioType.SFX_COLLECT_EGG);
 		_scoreService.AddScore(score);
+
 	}
 
 	public void BallFall() {

@@ -1,3 +1,4 @@
+using ObjectScripts;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ public class Pickup : MonoBehaviour {
 	[SerializeField] private float _rotatingPeriod = 100f;
 	[SerializeField] private Transform _mesh;
 	private ObjectWithScore _objectWithScore;
+	[SerializeField] ScoreTextTransform _scoresText;
 
 	private void Awake()
 	{
@@ -26,6 +28,10 @@ public class Pickup : MonoBehaviour {
 		{
 			var score = _objectWithScore?.GetScoreCount() ?? 0;
 			ball.PickUpItem(score);
+			ScoreTextTransform scorescore;
+			scorescore = Instantiate(_scoresText, transform);
+			scorescore.SetText(score);
+
 			Destroy(gameObject);
 		}
 

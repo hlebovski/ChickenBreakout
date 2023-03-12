@@ -85,7 +85,7 @@ public class PlayerPaddle : MonoBehaviour {
 		if(_timer > _boostPeriod) {
 			_timer = 0;
 			_boosted = true;
-			_rigidbody.MovePosition(_rigidbody.position + Vector3.up * 0.1f);
+			//_rigidbody.MovePosition(_rigidbody.position + Vector3.up * 0.1f);
 			//_mesh.position += Vector3.up * 0.2f;
 			_mesh.localScale = new Vector3(_mesh.localScale.x, _mesh.localScale.y * 1.3f, _mesh.localScale.z);
 			//_rigidbody.position = new Vector3(_rigidbody.position.x, _rigidbody.position.y + 0.3f, _rigidbody.position.z);
@@ -112,9 +112,8 @@ public class PlayerPaddle : MonoBehaviour {
 	}
 
 	public void PlayCamera() {
-		if (_camera.CameraMoveSpeed != 0.001f) { 
-		_camera.CameraMoveSpeed = _defaulCameraSpeed;
-		}
+		if (_camera.CameraMoveSpeed == 0.001f) return;
+		else _camera.CameraMoveSpeed = _defaulCameraSpeed;
 	}
 
 	public void StopCamera() {

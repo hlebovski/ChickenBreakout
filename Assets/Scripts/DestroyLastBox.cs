@@ -1,3 +1,4 @@
+using AudioScripts;
 using UnityEngine;
 public class DestroyLastBox : MonoBehaviour
 {
@@ -10,8 +11,13 @@ public class DestroyLastBox : MonoBehaviour
     public GameObject explosionPoint;
     private bool isActivated = false;
     private bool hasExploded = false;
+    private AudioSource _audioSource;
 
-    void Update()
+	private void Awake() {
+		_audioSource = GetComponent<AudioSource>();
+	}
+
+	void Update()
     {
         if (gameObject.activeSelf && !isActivated)
         {
@@ -29,7 +35,8 @@ public class DestroyLastBox : MonoBehaviour
 
         foreach (GameObject chunk in Chunks)
         {
-            chunk.SetActive(true);
+            _audioSource.Play();
+			chunk.SetActive(true);
             chunk.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * -ExplosionForce);
             chunk.GetComponent<Rigidbody>().AddRelativeTorque(Vector3.forward * -ChunksRotation * Random.Range(-5f, 5f));
             //chunk.GetComponent<Rigidbody>().AddRelativeTorque(Vector3.right * -ChunksRotation * Random.Range(-5f, 5f));
