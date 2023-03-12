@@ -5929,7 +5929,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8644890128313741259}
   - component: {fileID: 8644890128313741256}
-  - component: {fileID: 8019046981590019014}
+  - component: {fileID: 4261068326878005885}
+  - component: {fileID: -4079439079240721404}
   m_Layer: 0
   m_Name: Box(1Hit)
   m_TagString: Untagged
@@ -5968,7 +5969,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6523762, y: 1.4040861, z: 1.358449}
   m_Center: {x: 0.009800196, y: 0.6463604, z: -0.002228856}
---- !u!114 &8019046981590019014
+--- !u!114 &4261068326878005885
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5977,16 +5978,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 8644890128313741271}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d91c87c4ee5aaf54d956625532377658, type: 3}
+  m_Script: {fileID: 11500000, guid: 0fff90447ff2640c79f395399bc004ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsToToggle: []
-  ball: {fileID: 0}
+  objectsToToggle:
+  - {fileID: 8644890128623096906}
+  - {fileID: 8644890127015964451}
   ignoreCollisionTime: 1
   Material: {fileID: 0}
-  collisionSound: {fileID: 0}
-  volume: 0.5
-  audioSource: {fileID: 0}
+--- !u!114 &-4079439079240721404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8644890128313741271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29aa6335c92241ae8c56c149f98bd7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreCount: 100
+  _withMultiplication: 1
 --- !u!1 &8644890128449462648
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1540998698517551242}
   - component: {fileID: 1540998698517551240}
   - component: {fileID: 1540998698517551243}
+  - component: {fileID: -1966140658603741398}
+  - component: {fileID: 7654962522192357807}
   m_Layer: 0
   m_Name: Block
   m_TagString: Untagged
@@ -62,6 +64,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _healthPoints: 2
   _intactMesh: {fileID: 1540998698585889589}
+--- !u!114 &-1966140658603741398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540998698517551989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29aa6335c92241ae8c56c149f98bd7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreCount: 100
+  _withMultiplication: 1
+--- !u!114 &7654962522192357807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540998698517551989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29aa6335c92241ae8c56c149f98bd7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreCount: 100
+  _withMultiplication: 1
 --- !u!1 &1540998698585889588
 GameObject:
   m_ObjectHideFlags: 0

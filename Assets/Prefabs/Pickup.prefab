@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1422670795971748242}
   - component: {fileID: 5536526806152362854}
   - component: {fileID: 1422670795971748241}
+  - component: {fileID: 7268475965398440515}
   m_Layer: 0
   m_Name: Pickup
   m_TagString: Untagged
@@ -62,6 +63,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rotatingPeriod: 100
   _mesh: {fileID: 6769190488619466652}
+--- !u!114 &7268475965398440515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422670795971748243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29aa6335c92241ae8c56c149f98bd7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreCount: 50
+  _withMultiplication: 0
 --- !u!1 &1422670796710855819
 GameObject:
   m_ObjectHideFlags: 0
