@@ -23,7 +23,8 @@ namespace ObjectScripts
                 objectsToToggle[currentObjectIndex].SetActive(true);
                 collisionCount++;
                 StartCoroutine(IgnoreCollisionsForTime(ignoreCollisionTime));
-            }
+				
+			}
         }
 
         private IEnumerator<WaitForSeconds> IgnoreCollisionsForTime(float time)
