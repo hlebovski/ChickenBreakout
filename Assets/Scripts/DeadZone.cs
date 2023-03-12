@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class DeadZone : MonoBehaviour {
 
+	[SerializeField] CameraMove _camera;
 
+	private void OnTriggerEnter(Collider other) {
+		if (other.gameObject.TryGetComponent(out EndZone endzone)) {
+			_camera.CameraMoveSpeed = 0.001f;
+		}
+	}
 
 }

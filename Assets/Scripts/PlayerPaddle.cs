@@ -112,7 +112,9 @@ public class PlayerPaddle : MonoBehaviour {
 	}
 
 	public void PlayCamera() {
+		if (_camera.CameraMoveSpeed != 0.001f) { 
 		_camera.CameraMoveSpeed = _defaulCameraSpeed;
+		}
 	}
 
 	public void StopCamera() {

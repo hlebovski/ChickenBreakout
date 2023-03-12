@@ -378,7 +378,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00006365776, y: 0}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0}
   m_SizeDelta: {x: -0.00012731552, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &349289671
@@ -1556,10 +1556,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0421\u0442\u0430\u0440\u0442"
+  m_text: Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 404098275bd590a4490e71c783eb2aa2, type: 2}
-  m_sharedMaterial: {fileID: -4345715734308867609, guid: 404098275bd590a4490e71c783eb2aa2,
+  m_fontAsset: {fileID: 11400000, guid: c498d97751c14e94d9b694dffd12bc2e, type: 2}
+  m_sharedMaterial: {fileID: -7194461416022775105, guid: c498d97751c14e94d9b694dffd12bc2e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

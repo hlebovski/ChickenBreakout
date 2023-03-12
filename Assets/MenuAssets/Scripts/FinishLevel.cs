@@ -9,4 +9,10 @@ public class FinishLevel : MonoBehaviour
         SceneManager.LoadScene(1);
         
     }
+
+	public void FinishTutorial() {
+		
+
+	}
+
 }
