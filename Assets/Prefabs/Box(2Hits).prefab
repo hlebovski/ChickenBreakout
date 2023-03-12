@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 790077489866808580}
   - component: {fileID: 790077489866808581}
   - component: {fileID: 790077489866808578}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: WoodenBox_part04
   m_TagString: Pickup
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 790077489896447997}
   - component: {fileID: 790077489896447994}
   - component: {fileID: 790077489896447995}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: WoodenBox_part11
   m_TagString: Pickup
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -256,9 +256,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790077489982405981}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0.75}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 790077490751668399}
@@ -275,7 +275,7 @@ Transform:
   - {fileID: 790077490064568997}
   m_Father: {fileID: 790077490903149416}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &790077489982405982
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -447,7 +447,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790077490064568994}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.67700005, y: 0.658, z: 0}
+  m_LocalPosition: {x: 0, y: 0.65, z: -0.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5361,7 +5361,7 @@ GameObject:
   - component: {fileID: 790077490256274675}
   - component: {fileID: 790077490256274672}
   - component: {fileID: 790077490256274673}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: BoxToExplode
   m_TagString: Pickup
   m_Icon: {fileID: 0}
@@ -5375,9 +5375,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790077490256274574}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0.75}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 790077490748885395}
@@ -5391,7 +5391,7 @@ Transform:
   - {fileID: 790077489896447999}
   m_Father: {fileID: 790077490903149416}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &790077490256274677
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5579,7 +5579,7 @@ MonoBehaviour:
   ParentObj: {fileID: 790077490903149412}
   ExplosionForce: 200
   ChunksRotation: 20
-  time: 0.8
+  time: 2
   chunkDestroyTime: 2
   explosionPoint: {fileID: 790077491239693892}
 --- !u!1 &790077490272501089
@@ -5595,7 +5595,7 @@ GameObject:
   - component: {fileID: 790077490272501090}
   - component: {fileID: 790077490272501091}
   - component: {fileID: 790077490272501088}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: WoodenBox_part03
   m_TagString: Pickup
   m_Icon: {fileID: 0}
@@ -5645,7 +5645,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5710,7 +5710,7 @@ GameObject:
   - component: {fileID: 790077490369423164}
   - component: {fileID: 790077490369423165}
   - component: {fileID: 790077490369423162}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: WoodenBox_part06
   m_TagString: Pickup
   m_Icon: {fileID: 0}
@@ -5760,7 +5760,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5873,7 +5873,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5956,7 +5956,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5991,7 +5991,7 @@ GameObject:
   - component: {fileID: 790077490748885393}
   - component: {fileID: 790077490748885422}
   - component: {fileID: 790077490748885423}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: WoodenBox_part01
   m_TagString: Pickup
   m_Icon: {fileID: 0}
@@ -6041,7 +6041,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6106,7 +6106,7 @@ GameObject:
   - component: {fileID: 790077490750069710}
   - component: {fileID: 790077490750069711}
   - component: {fileID: 790077490750069708}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: WoodenBox_part09
   m_TagString: Pickup
   m_Icon: {fileID: 0}
@@ -6156,7 +6156,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6269,7 +6269,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6304,7 +6304,7 @@ GameObject:
   - component: {fileID: 790077490753587838}
   - component: {fileID: 790077490753587839}
   - component: {fileID: 790077490753587836}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: WoodenBox_part10
   m_TagString: Pickup
   m_Icon: {fileID: 0}
@@ -6354,7 +6354,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6467,7 +6467,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6502,7 +6502,7 @@ GameObject:
   - component: {fileID: 790077490778772179}
   - component: {fileID: 790077490778772176}
   - component: {fileID: 790077490778772177}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: WoodenBox_part07
   m_TagString: Pickup
   m_Icon: {fileID: 0}
@@ -6552,7 +6552,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6665,7 +6665,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6714,7 +6714,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790077490903149412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 4.19, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6736,8 +6736,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.6523762, y: 1.4040861, z: 1.358449}
-  m_Center: {x: 0.009800196, y: 0.6463604, z: -0.002228856}
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &-6954261664620091464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6754,7 +6754,7 @@ MonoBehaviour:
   - {fileID: 790077491174629311}
   - {fileID: 790077489982405981}
   - {fileID: 790077490256274574}
-  ignoreCollisionTime: 1
+  ignoreCollisionTime: 0
   Material: {fileID: 0}
 --- !u!114 &-5507344050929402872
 MonoBehaviour:
@@ -6796,14 +6796,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790077491174629311}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0.75}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 790077490903149416}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &790077491174629280
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6832,7 +6832,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6893,7 +6893,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790077491239693892}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.658, z: -0.677}
+  m_LocalPosition: {x: 0, y: 0.5, z: -0.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6975,7 +6975,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7058,7 +7058,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7093,7 +7093,7 @@ GameObject:
   - component: {fileID: 790077491501516133}
   - component: {fileID: 790077491501516130}
   - component: {fileID: 790077491501516131}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: WoodenBox_part08
   m_TagString: Pickup
   m_Icon: {fileID: 0}
@@ -7143,7 +7143,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7256,7 +7256,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7339,7 +7339,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7422,7 +7422,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7505,7 +7505,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d166571e825b2ae458f6b6433772a519, type: 2}
+  - {fileID: 2100000, guid: e36e170b454823a4595c8fb966886824, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

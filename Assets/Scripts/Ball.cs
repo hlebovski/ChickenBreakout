@@ -62,7 +62,7 @@ public class Ball : MonoBehaviour {
 			_audioController.Instance.PlayAudio(AudioType.SFX_HIT_BOMB);
 
 			Explode(1, transform.position - bomb.gameObject.transform.position);
-			bomb.OnHitBlock();
+			//bomb.OnHitBlock();
 		}
 
 		if (collision.gameObject.TryGetComponent<ObjectScripts.BoxesBehavior>(out var boxesBehavior))
