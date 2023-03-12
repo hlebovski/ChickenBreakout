@@ -17,6 +17,7 @@ public class Ball : MonoBehaviour {
 	[SerializeField] Material _trailMaterial;
 	[SerializeField] Material _trailBoostMaterial;
 	[SerializeField] AudioController _audioController;
+	[SerializeField] private ScoreService _scoreService;
 
 	private Rigidbody _rigidbody;
 	private TrailRenderer _trail;
@@ -46,8 +47,8 @@ public class Ball : MonoBehaviour {
 
 	}
 
-	private void OnCollisionEnter(Collision collision) {
-
+	private void OnCollisionEnter(Collision collision) 
+	{
 		if (collision.gameObject.TryGetComponent(out DeadZone deadZone)) {
 			BallFall();
 		}
@@ -70,6 +71,11 @@ public class Ball : MonoBehaviour {
 			boxesBehavior.OnHitBox();
 		}
 
+		if (collision.gameObject.TryGetComponent<ObjectWithScore>(out var objectWithScore))
+		{
+			var score = objectWithScore.GetScoreCount();
+			_scoreService.AddScore(score);	
+		}
 	}
 
 
@@ -100,8 +106,9 @@ public class Ball : MonoBehaviour {
 
 	}
 
-	public void PickUpItem() {
+	public void PickUpItem(int score) {
 		_audioController.Instance.PlayAudio(AudioType.SFX_COLLECT_EGG);
+		_scoreService.AddScore(score);
 	}
 
 	public void BallFall() {
