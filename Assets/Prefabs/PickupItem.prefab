@@ -79,6 +79,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scoreCount: 150
   _withMultiplication: 0
+  _offset: 1
+  _scorePrefab: {fileID: 8735291956063636114, guid: 88361cad525b14ba1830811baf33a7a0,
+    type: 3}
 --- !u!1 &1422670796710855819
 GameObject:
   m_ObjectHideFlags: 0

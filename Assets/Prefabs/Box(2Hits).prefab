@@ -6770,6 +6770,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scoreCount: 100
   _withMultiplication: 1
+  _offset: 1
+  _scorePrefab: {fileID: 8735291956063636114, guid: 88361cad525b14ba1830811baf33a7a0,
+    type: 3}
 --- !u!1 &790077491174629311
 GameObject:
   m_ObjectHideFlags: 0

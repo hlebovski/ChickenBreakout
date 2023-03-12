@@ -19,7 +19,6 @@ public class Ball : MonoBehaviour {
 	[SerializeField] Material _trailBoostMaterial;
 	[SerializeField] AudioController _audioController;
 	[SerializeField] private ScoreService _scoreService;
-	[SerializeField] ScoreTextTransform _scoresText;
 
 	private Rigidbody _rigidbody;
 	private TrailRenderer _trail;
@@ -77,9 +76,6 @@ public class Ball : MonoBehaviour {
 		{
 			var score = objectWithScore.GetScoreCount();
 			_scoreService.AddScore(score);
-			ScoreTextTransform scorescore;
-			scorescore = Instantiate(_scoresText, objectWithScore.transform);
-			scorescore.SetText(score);
 		}
 	}
 
