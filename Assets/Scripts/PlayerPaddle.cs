@@ -30,7 +30,7 @@ public class PlayerPaddle : MonoBehaviour {
 	private void Awake() {
 		_rigidbody.GetComponent<Rigidbody>();
 		_defaulCameraSpeed = _camera.CameraMoveSpeed;
-		
+		Time.timeScale = 1f;
 		//_audioController.Instance.PlayAudio(AudioType.SFX_SOUNDTRACK);
 		StopHay();
 

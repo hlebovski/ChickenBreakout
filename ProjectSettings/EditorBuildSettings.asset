@@ -14,19 +14,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuLvl.unity
     guid: 2d063afe0dd48c64a93f625461a5d8e8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TutorialScene.unity
     guid: 3891f18ea792dc34fafcc3d1b3ca7ff5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainWithScore.unity
     guid: 1eaa8257b30d04c3ab268894310d6055
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainOld.unity
     guid: 2abe70b14e3ca924cb76d52579aa88b0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainWithAudio.unity
     guid: 17b9900bc0d78482da10025d0c5c7f1b
   - enabled: 1
     path: Assets/Scenes/Scene1.unity
     guid: c5e985b3a6ada8647991b50480b790bd
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 3091738f42e24254995f4b041b3cd3b1
   m_configObjects: {}
